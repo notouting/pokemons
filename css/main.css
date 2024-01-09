@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "Cinema";
+    src: url(../fonts/Cinematografica-Light-trial.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #212529;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+/****************************** Header start ******************************/
+.site-header{
+    margin-block: 15px;
+}
+.title{
+    font-size: 50px;
+    font-family: "Cinema";
+    letter-spacing: 3px;
+    color: white;
+    font-weight: 500;
+}
+.site-haeder__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header__nav{
+    width: 100%;
+    max-width: 500px;
+}
+.site-header__nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.site-header__nav-item:not(:first-child){
+    font-size: 35px;
+    font-family: "Cinema";
+    letter-spacing: 3px;
+    color: white;
+    font-weight: 400;
+}
+.site-header__nav-link{
+    color: #fff;
+}
+.site-header__nav-item:first-child{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 7px;
+}
+.site-header__burger{
+    border: none;
+    background-color: transparent;
+}
+@media only screen and (min-width:1024px) {
+    .site-header__burger{
+        display: none;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .site-header__nav{
+        display: none;
+    }
+}
+
+/****************************** Header end ******************************/
+/****************************** Main start ******************************/
+.site-main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    justify-content: center;
+}
+.pokemon-section__list li{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow-y: hidden;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.pokemon-section__item-box{
+    margin: 2px 2px;
+    position: absolute;
+    inset: 0;
+    transition: all 0.2s linear;
+    border-radius: 10px;
+    box-shadow: rgb(255, 255, 255) 0 2px 5px;
+    background-color: #212529;
+}
+.pokemon-section__list li:hover .pokemon-section__item-box{
+    height: 380px;
+    z-index: 10;
+}
+.pokemon-section li:hover{
+    overflow-y: visible;
+}
+.pokemon-section__item-img{
+    width: 100%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+.load-more{
+    width: 200px;
+    background-color: transparent;
+    border: 1.5px solid rgb(225, 225, 225);
+    border-radius: 15px;
+    padding: 12px 24px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.pokemon-section__item-box2{
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.pokemon-section__item-img2{
+    background-image: radial-gradient(circle, #ffffff 70%, transparent 70%);
+    margin-left: 10px;
+}
+.pokemon-section__item-height,.pokemon-section__item-weight,.pokemon-section__item-eggs,.pokemon-section__item-spawn,.pokemon-section__item-weaknesses{
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16px; 
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.isfire{
+    background-image: radial-gradient(circle, #ff6a00 34%, red 84%);
+}
+.iswater{
+    background-image: radial-gradient(circle, #00c8ff 34%, rgb(0, 47, 255) 84%);
+}
+.isbug{
+    background-image: radial-gradient(circle, #ff3c00 34%, rgb(255, 251, 12) 84%);
+}
+.isnormal{
+    background-image: radial-gradient(circle, #ffffff 34%, rgb(77, 77, 77) 84%);
+}
+.ispoison{
+    background-image: radial-gradient(circle, #67306e 34%, rgb(192, 101, 177) 84%);
+}
+.iselectric{
+    background-image: radial-gradient(circle, #ffffff 34%, rgb(0, 47, 255) 84%);
+}
+.isground{
+    background-image: radial-gradient(circle, #ff6d04 34%, rgb(60, 32, 7) 84%);
+}
+.isgrass{
+    background-image: radial-gradient(circle, #00ff44 34%, rgb(3, 34, 7) 84%);
+}
+.isfighting{
+    background-image: radial-gradient(circle, #000000 34%, rgb(195, 0, 0) 84%);
+}
+.ispsychic{
+    background-image: radial-gradient(circle, #b700ff 34%, rgb(16, 0, 133) 84%);
+}
+.isdragon{
+    background-image: radial-gradient(circle, #ff9900 34%, rgb(214, 90, 23) 84%);
+}
+.isice{
+    background-image: radial-gradient(circle, #4b48f2 34%, rgb(13, 183, 154) 84%);
+}
+.isrock{
+    background-image: radial-gradient(circle, #471800 34%, rgb(3, 34, 7) 84%);
+}
+.isghost{
+    background-image: radial-gradient(circle, #797979 34%, rgb(205, 205, 205) 84%);   
+}
+
+
+.pokemon-section__item-title{
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+.pokemon-section__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:1229px) {
+    .pokemon-section__list{
+        justify-content: space-evenly;
+    }
+}
+/****************************** Main end ******************************/
+
+/****************************** Footer start ******************************/
+/****************************** Footer end ******************************/
+.chances{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #fff;
+}
+.good-luck{
+    font-size: 60px;
+    font-family: "Cinema";
+    letter-spacing: 3px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.good-luck span{
+    font-family: 'Courier New', Courier, monospace;
+}
+.pokemon-wrapper{
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:767px) {
+    .site-header__nav{
+        display: none;
+    }
+}
+#myDialog{
+    color: #fff;
+    margin-left: auto;
+    margin-right: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}

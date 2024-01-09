@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke'mon GO</title>
+    <link rel="stylesheet" href="../css/types.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-haeder__wrapper">
+                <a href="../index.html" class="site-header__logo-link">
+                    <h1 class="title">
+                        Pokemon GO
+                    </h1>
+                </a>
+                <nav class="site-header__nav">
+                    <ul class="site-header__nav-list">
+                        <li class="site-header__nav-item">
+                            <a href="2024.html" class="site-header__nav-link">2024</a>
+                        </li>
+                        <li class="site-header__nav-item">
+                            <a href="trends.html" class="site-header__nav-link">trends</a>
+                        </li>
+                        <li class="site-header__nav-item">
+                            <a href="chances.html" class="site-header__nav-link">chances</a>
+                        </li>
+                        <li class="site-header__nav-item">
+                            <a href="types.html" class="site-header__nav-link">types</a>
+                        </li>
+                        <li class="site-header__nav-item">
+                            <a href="about.html" class="site-header__nav-link">about</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="site-header__burger">ss</button>
+            </div>
+        </div>
+    </header>
+    <main class="site-main">
+        <section class="pokemon-section">
+            <div class="container">
+                <div class="pokemon-wrapper site-header__nav-list">
+                    <button class="load-more" onclick="fire()">Fire</button>
+                    <button class="load-more" onclick="water()">Water</button>
+                    <button class="load-more" onclick="bug()">Bug</button>
+                    <button class="load-more" onclick="normal()">Normal</button>
+                    <button class="load-more" onclick="poison()">Poison</button>
+                    <button class="load-more" onclick="electric()">Electric</button>
+                    <button class="load-more" onclick="ground()">Ground</button>
+                    <button class="load-more" onclick="grass()">Grass</button>
+                    <button class="load-more" onclick="fighting()">Fighting</button>
+                    <button class="load-more" onclick="psychic()">Psychic</button>
+                    <button class="load-more" onclick="dragon()">Dragon</button>
+                    <button class="load-more" onclick="ice()">Ice</button>
+                    <button class="load-more" onclick="rock()">Rock</button>
+                    <button class="load-more" onclick="ghost()">Ghost</button>
+                </div>
+                <ul class="pokemon-section__list list">
+                </ul>
+            </div>
+        </section>
+    </main>
+    <p class="visually-hidden value"></p>
+
+    <script src="../js/pokemons.js"></script>
+    <script src="../js/types.js"></script>
+</body>
+
+</html>
